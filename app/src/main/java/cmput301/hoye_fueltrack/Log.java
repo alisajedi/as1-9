@@ -84,7 +84,7 @@ public class Log {
     }
 
     public void setFuel_total_cost() {
-        this.fuel_total_cost = fuel_unit_cost * fuel_amount;
+        this.fuel_total_cost = (this.fuel_unit_cost * this.fuel_amount) / 100;
     }
 
     // double formatting from
