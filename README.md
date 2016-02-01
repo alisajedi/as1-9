@@ -1,6 +1,8 @@
 # as1
 A fuel-tracking app for android phones
 
+Tutorial Video at:  https://www.youtube.com/watch?v=QTpMupc079s
+
 This app allows the user to enter information about their fuel consumption into their device by using log entries.
 
 The log entries track the following information:
@@ -21,5 +23,3 @@ This app also allows the user to:
 Data in this app is:
   - peristent across calls
   - dynamically updated in the case of alteration to the data
-  
-Tutorial Video at:  <ENTER URL HERE>
