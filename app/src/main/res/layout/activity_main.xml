@@ -14,7 +14,7 @@
         android:layout_width="352dp"
         android:layout_height="58dp"
         android:text="FUEL TRACKER"
-        android:id="@+id/textView"
+        android:id="@+id/title"
         android:layout_row="0"
         android:layout_column="0" />
 
