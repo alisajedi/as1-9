@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">hoye-FuelTrack</string>
+    <string name="title_activity_add_entry">addEntry</string>
+</resources>
