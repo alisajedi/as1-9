@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/afs/ualberta.ca/home/h/o/hoye/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.5/686c608d1805b6d4d425ec4459e88164ffc85870/gson-2.5.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="/afs/ualberta.ca/home/h/o/hoye/301/as1/app/build/intermediates/pre-dexed/debug/gson-2.5_dd2b94cafeb1a02a60d42df003bc7ff115dea387.jar" />
+    </item>
+    <item
+        jar="/afs/ualberta.ca/home/h/o/hoye/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/afs/ualberta.ca/home/h/o/hoye/301/as1/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0_b09bee067df63ed18a39b4558cd8e72d3eddc5d5.jar" />
+    </item>
+    <item
+        jar="/afs/ualberta.ca/home/h/o/hoye/301/as1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
+        <dex dex="/afs/ualberta.ca/home/h/o/hoye/301/as1/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-18.0.0_e729b5d6eacb188afc7d6856837b4d2d7b7c6431.jar" />
+    </item>
+
+</items>
