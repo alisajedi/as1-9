@@ -4,6 +4,11 @@ import java.util.Date;
 
 /**
  * Created by Stu on 2016-01-31.
+ *
+ * This class represents a log for a fuel tracker app.
+ * The object tracks the date, the station, the odometer reading, the fuel grade, the fuel amount,
+ * the fuel unit cost, and calculates the total cost dynamically from the amount and unit cost.
+ *
  */
 public class Log {
     private String date;

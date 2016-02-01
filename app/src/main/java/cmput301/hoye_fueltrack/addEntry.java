@@ -6,6 +6,11 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.EditText;
 
+/*
+*  This class handles input from the user and passes it back to the main activity.
+*  This class does a rudimentary job of validating the user's input.
+*/
+
 public class addEntry extends ActionBarActivity {
 
     @Override

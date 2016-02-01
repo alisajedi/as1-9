@@ -23,6 +23,16 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+/*
+*  This activity is the central controller for the app.
+*  It passes focus to the addEntry controller when the user selects to add a new entry.
+*  It handles the update commands to the ArrayListAdapter.
+*  It ensures that the values passed to it from addEntry are turned into a log before
+*  it passes the log to the FuelTracker.
+*  It formats the total cost of fuel to be displayed.
+*  The class also handles all file I/O for the app.
+*
+*/
 public class MainActivity extends Activity {
     private static final String FILENAME = "cmput301.as1.file.sav";
     private static final int REQUEST_CODE = 1;
@@ -51,6 +61,7 @@ public class MainActivity extends Activity {
         logView.setAdapter(logsAdapter);
     }
 
+    // Start a sub-activity to create a new Log.
     // Tutorial help on starting sub-activities.
     // http://www.vogella.com/tutorials/AndroidIntent/article.html
     public void addEntry(View view) {
@@ -62,6 +73,7 @@ public class MainActivity extends Activity {
         }
     }
 
+    // Empty the list of logs
     public void clearEntries(View view) {
         this.tracker.clear();
         saveInFile();
@@ -69,6 +81,7 @@ public class MainActivity extends Activity {
         total.setText("Total: $" + String.format("%.2f", tracker.getTotal()));
     }
 
+    // Take info from the addEntry sub-activity
     // Splitting a string from:
     // http://stackoverflow.com/questions/3481828/how-to-split-a-string-in-java
     // User: BalusC
@@ -94,6 +107,9 @@ public class MainActivity extends Activity {
         }
     }
 
+    // Handle parsing the Gson string.
+    // Method used from in-lab LonelyTwitter code.
+    // Source: https://github.com/stuarthoye/lonelyTwitter.git
     private void loadFromFile(){
         try {
             FileInputStream fis = openFileInput(FILENAME);
@@ -111,6 +127,9 @@ public class MainActivity extends Activity {
         }
     }
 
+    // Handle transforming objects into Gson strings.
+    // Method used from in-lab LonelyTwitter code.
+    // Source: https://github.com/stuarthoye/lonelyTwitter.git
     private void saveInFile(){
         try {
             FileOutputStream fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);

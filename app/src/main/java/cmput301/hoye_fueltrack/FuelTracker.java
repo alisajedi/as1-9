@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 /**
  * Created by Stu on 2016-02-01.
+ *
+ * This class holds an arraylist of logs, and calculates the total cost of all
+ * fuel accounted for in the logs.
+ *
  */
 public class FuelTracker {
     private ArrayList<Log> logs;
