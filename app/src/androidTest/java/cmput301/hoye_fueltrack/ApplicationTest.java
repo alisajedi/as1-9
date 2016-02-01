@@ -55,18 +55,25 @@ public class ApplicationTest extends ActivityInstrumentationTestCase2 {
         String type = "regular";
         double amount = 40.234;
         double cost = 79.4;
+        double total = (amount * cost) / 100;
         Log log1 = new Log(date, station, odo, type, amount, cost);
 
         tracker.addLog(log1);
         logs.add(log1);
         assertEquals(logs, tracker.getLogs());
+        assertEquals(total, tracker.getTotal());
 
         Log log2 = new Log("2016-01-19", station, odo, type, amount, cost);
-        tracker.addLog(log2);
         logs.add(log2);
+        tracker.addLog(log2);
+        assertEquals(logs, tracker.getLogs());
+        assertEquals((2 * total), tracker.getTotal());
+
+        Log log3 = new Log("2016-02-19", station, odo, type, amount, cost);
+        logs.add(log3);
+        tracker.setLogs(logs);
         assertEquals(logs, tracker.getLogs());
 
-        
     }
 
 }

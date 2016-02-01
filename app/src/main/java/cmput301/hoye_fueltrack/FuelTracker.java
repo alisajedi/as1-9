@@ -17,7 +17,7 @@ public class FuelTracker {
     }
 
     public ArrayList<Log> getLogs(){
-        return logs;
+        return this.logs;
     }
 
     public void setLogs(ArrayList<Log> newLogs){
@@ -26,8 +26,8 @@ public class FuelTracker {
 
     public double getTotal(){
         double total = 0;
-        for (int i = 0; i < logs.size(); i++){
-            total += logs.get(i).getFuel_total_cost();
+        for (int i = 0; i < this.logs.size(); i++){
+            total += this.logs.get(i).getFuel_total_cost();
         }
         return total;
     }
