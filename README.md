@@ -1,5 +1,5 @@
 # as1
-A fuel-tracking app for android phones
+A fuel-tracking app for android devices
 
 Tutorial Video at:  https://www.youtube.com/watch?v=QTpMupc079s
 
@@ -12,14 +12,18 @@ The log entries track the following information:
   - fuel grade
   - fuel amount
   - fuel unit cost
-  - fuel cost
+  - fuel total cost
   
 This app also allows the user to:
   - view all entered log entries
   - add new entries
   - cancel entering an existing entry
   - see the total overall cost of fuel
+  - clear the list of entries
   
 Data in this app is:
-  - peristent across calls
+  - peristent
   - dynamically updated in the case of alteration to the data
+
+TODO:
+  - Allow the user to select a log from the ListView in MainActivity, and edit that log.
